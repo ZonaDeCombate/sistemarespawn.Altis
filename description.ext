@@ -1,0 +1,34 @@
+respawn = 3;
+respawndelay = 1;
+enableDebugConsole = 1;
+DisabledAI = true;
+
+
+
+
+
+class CfgFunctions
+{
+	class ZC
+	{
+		class initialization
+		{
+			class teleportPlayer {file = "zonadecombate\functions\teleportPlayer.sqf";};
+      class initZCrespawn {file = "zonadecombate\functions\initZCrespawn.sqf";};
+			class getPlayerById {file = "zonadecombate\functions\getPlayerById.sqf";};
+		};
+	};
+};
+
+class CfgSounds {
+  class SEN_transportWelcome {
+  	name = "";
+  	sound[] = {"zonadecombate\audio\transport_welcome.ogg", 4.5, 1};
+  	titles[] = {};
+  };
+  class SEN_transportAccomplished {
+  	name = "";
+  	sound[] = {"zonadecombate\audio\transport_accomplished.ogg", 4.5, 1};
+  	titles[] = {};
+  };
+};
